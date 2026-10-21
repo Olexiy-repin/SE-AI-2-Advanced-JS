@@ -1,0 +1,146 @@
+/*
+ * Скалярні типи:
+ * - boolean
+ * - number
+ * - string
+ * - null and undefined
+ *
+ * Складні типи:
+ * - object
+ * - array
+ */
+
+//* Скалярні типи для змінних:
+/*
+TODO: Оголоси змінні з наступними типами:
+TODO:   - рядок;
+TODO:   - число;
+TODO:   - бульове значення;
+TODO:   - null та undefined.
+*/
+// let firstName: string = 'Oleksii';
+// let userAge: number = 16;
+// let isAdmin: boolean = true;
+// let empty: null = null;
+// let notValue: undefined = undefined;
+
+//* Типізація параметрів функції:
+/*
+TODO: Створи функцію showMessage(firstName, lastName, age).
+TODO: Функція виводить до консолі повідомлення: "{{firstName}} {{lastName}} is {{age}} years old."
+TODO: Типізуй параматери функції:
+TODO:   - firstName, рядок;
+TODO:   - lastName, рядок;
+TODO:   - age, число.
+*/
+// const showMessage = (firstName: string, lastName: string, age: number) => {
+//   console.log(`${firstName} ${lastName} is ${age} years old.`);
+// };
+
+// showMessage('Beatrice', 'Logan', 25);
+
+//* Складні типи.
+//~ object.
+/*
+TODO: Типізуй обʼєкт bookHTML.
+*/
+// interface Book {
+//   title: string;
+//   description: string;
+//   rating: number;
+// }
+
+// const bookHTML: Book = {
+//   title: 'HTML',
+//   description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, illo.',
+//   rating: 8.5,
+// };
+
+/*
+TODO: Типізуй параметр функції showBookInfo(book).
+TODO: Функція виводить інформацію по книзі.
+*/
+// interface Book {
+//   title: string;
+//   description: string;
+//   rating: number;
+// }
+
+// function showBookInfo(book: Book) {
+//   console.group('Book info:');
+//   console.log(`Title: ${book.title}`);
+//   console.log(`Description: ${book.description}`);
+//   console.log(`Rating: ${book.rating}`);
+//   console.groupEnd();
+// }
+
+// showBookInfo({
+//   title: 'JS',
+//   description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, illo.',
+//   rating: 9,
+// });
+
+//~ array
+//TODO: Типізуй масив temperature.
+// const temperature: number[] = [10, 15, 12.5, 13];
+
+//TODO: Типізуй масив property.
+// const property: (string | number)[] = ['rating', 10];
+
+//TODO: Типізуй масив обʼєктів books.
+// interface Book {
+//   title: string;
+//   description: string;
+//   rating: number;
+// }
+
+// const books: Book[] = [
+//   {
+//     title: 'JS',
+//     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, illo.',
+//     rating: 9,
+//   },
+//   {
+//     title: 'HTML',
+//     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, illo.',
+//     rating: 8.5,
+//   },
+//   {
+//     title: 'CSS',
+//     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, illo.',
+//     rating: 9,
+//   },
+// ];
+
+/*
+TODO: Типізуй параметр books в функції getBooksTitles(books).
+*/
+// interface Book {
+//   title: string;
+//   description: string;
+//   rating: number;
+// }
+
+// function getBooksTitles(books: Book[]) {
+//   return books.map(book => book.title);
+// }
+
+// console.log(
+//   getBooksTitles([
+//     {
+//       title: 'JS',
+//       description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, illo.',
+//       rating: 9,
+//     },
+//     {
+//       title: 'HTML',
+//       description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, illo.',
+//       rating: 8.5,
+//     },
+//     {
+//       title: 'CSS',
+//       description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, illo.',
+//       rating: 9,
+//     },
+//   ])
+// );
