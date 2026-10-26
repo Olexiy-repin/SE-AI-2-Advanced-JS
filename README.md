@@ -1,1 +1,1 @@
-# SE-AI-2-Advanced-JS
+# SE-AI-02-Advanced-JS
